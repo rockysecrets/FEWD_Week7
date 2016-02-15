@@ -10,14 +10,20 @@ Developer @GA in NYC
 /* SETUP
 /*******************************************/
 
+
 /* Box Model Hack */
+
 * {
-  -moz-box-sizing: border-box; /* Firexfox */
-  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-  box-sizing: border-box; /* IE */
+  -moz-box-sizing: border-box;
+  /* Firexfox */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box;
+  /* IE */
 }
 
 /* Clear fix hack */
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -26,19 +32,18 @@ Developer @GA in NYC
   line-height: 0;
   height: 0;
 }
-
 .clear {
   clear: both;
 }
-
 .alignright {
   float: right;
-  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+  padding: 0 0 10px 10px;
+  /* note the padding around a right floated image */
 }
-
 .alignleft {
   float: left;
-  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+  padding: 0 10px 10px 0;
+  /* note the padding around a left floated image */
 }
 
 /******************************************
@@ -47,7 +52,7 @@ Developer @GA in NYC
 
 body {
   color: #f0efef;
-  font-size: 26px;
+  font-size: 0.625em;
   line-height: 1.4;
   color: #606161;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -57,21 +62,23 @@ a {
   text-decoration: none;
 }
 
-
 /******************************************
 /* LAYOUT
 /*******************************************/
 
+
 /* Center the container */
+
 .container {
-  width: 960px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 30px 60px 30px 60px;
+  /*margin: 0 auto;*/
 }
 .logo {
-  font-size: 48px;
+  font-size: 4.8em;
   font-weight: 800;
+  margin-left: 20px;
 }
-
 header {
   background: #033048;
   padding: 25px 0;
@@ -81,31 +88,33 @@ header .logo {
   color: #fff;
   float: left;
 }
-
 header nav {
   float: right;
   margin-top: 15px;
 }
 header nav ul li {
   display: inline-block;
-  margin: 0 0 0 40px;
-  font-size: 24px;
+  margin: 0 20px 0 40px;
+  font-size: 2.4em;
 }
 header nav ul li a {
   color: #f9e42e;
 }
-
+.hamburgericon {
+  height: 36px;
+  display: none;
+}
 #hero {
   height: 700px;
   background: url(../images/header_bg.jpg) no-repeat top center #131e27;
+  background-size: cover;
   padding-top: 32px;
 }
-
 #hero .logo {
   color: #fff;
 }
 #hero h2 {
-  font-size: 48px;
+  font-size: 4.8em;
   text-align: center;
   color: #fff;
   margin: 120px 0 90px;
@@ -116,7 +125,7 @@ header nav ul li a {
   font-weight: 800;
   padding: 12px 0;
   width: 280px;
-  font-size: 28px;
+  font-size: 2.8em;
   text-align: center;
   display: block;
   margin: 0 auto;
@@ -128,23 +137,31 @@ header nav ul li a {
 .blue {
   background: #033048;
   color: #fff;
-  font-size: 24px;
+  font-size: 2.4em;
 }
 #benefits {
-  padding: 100px 0 80px;
+  padding: 0 100px 0 80px;
 }
 h3 {
   color: #033048;
-  font-size: 40px;
+  font-size: 4em;
   font-weight: 600;
   margin-bottom: 40px;
 }
 #benefits p, #benefits ul {
-  width: 600px;
+  width: 70%;
+  font-size: 2.6em;
 }
 #benefits ul {
   list-style: disc;
   margin: 30px 0 0 80px;
+}
+#benefits li {
+  padding: 10px;
+}
+#benefits p {
+  width: 100%;
+  list-style: disc;
 }
 #testimonial {
   background: url(../images/testimonial_bg.jpg) no-repeat top center #071324;
@@ -152,11 +169,11 @@ h3 {
   color: #fff;
 }
 blockquote {
-  font-size: 36px;
+  font-size: 3.6em;
   font-weight: 300;
   font-style: italic;
   text-align: center;
-  width: 580px;
+  width: 100%;
   margin: 0 auto;
 }
 blockquote span {
@@ -168,13 +185,13 @@ blockquote span {
   margin-top: 80px;
 }
 #posts {
-  width: 700px;
+  width: 70%;
   display: inline-block;
   margin-right: 20px;
   vertical-align: top;
 }
 #sidebar {
-  width: 240px;
+  width: 20%;
   display: inline-block;
   vertical-align: top;
 }
@@ -185,25 +202,25 @@ blockquote span {
 }
 .post h2 {
   font-weight: 600;
-  font-size: 40px;
+  font-size: 3.6em;
   line-height: 1.3;
   margin-bottom: 30px;
 }
 .post h2 a {
   color: #043049;
 }
-
 .post img {
   margin-bottom: 30px;
+  width: 100%;
 }
 .post p {
-  font-size: 24px;
+  font-size: 2.4em;
   line-height: 1.333;
   color: #606161;
 }
 .post p:first-of-type:first-letter {
   float: left;
-  font-size: 80px;
+  font-size: 4em;
   line-height: 65px;
   padding-top: 4px;
   padding-right: 8px;
@@ -224,7 +241,7 @@ blockquote span {
   font-weight: 800;
   padding: 12px 0;
   width: 280px;
-  font-size: 28px;
+  font-size: 2.8em;
   text-align: center;
   display: block;
   margin: 0 auto;
@@ -236,11 +253,11 @@ blockquote span {
 .blue {
   background: #033048;
   color: #fff;
-  font-size: 24px;
+  font-size: 2.4em;
 }*/
 
 #sidebar h3 {
-  font-size: 32px;
+  font-size: 3.2em;
   font-weight: 800;
   margin-bottom: 15px;
   color: #043049;
@@ -250,10 +267,10 @@ blockquote span {
 }
 #sidebar ul li a {
   color: #043049;
-  font-size: 24px;
+  font-size: 2.4em;
 }
 #sidebar p {
-  font-size: 22px;
+  font-size: 2.2em;
   line-height: 1.1;
   margin-bottom: 40px;
 }
@@ -261,13 +278,11 @@ blockquote span {
   color: #043049;
   font-weight: 600;
 }
-
 #bottom-cta {
   background: #f9e42e;
   padding: 30px;
   text-align: center;
 }
-
 footer {
   background: #121212;
   padding: 65px 0 45px;
@@ -283,10 +298,66 @@ footer ul li {
   margin: 0 26px 75px;
 }
 footer p {
-  font-size: 18px;
+  font-size: 1.8em;
   color: #fff;
   font-weight: 600;
 }
-
-
-
+@media only screen and (max-width:768px) {
+  .container {
+    padding: 20px;
+  }
+  header nav {
+    display: none;
+  }
+  .logo {
+    font-size: 4em;
+    clear: left;
+    /*margin-left: 10px;*/
+  }
+  header {
+    padding-left: 20px;
+  }
+  .hamburgericon {
+    display: inline-block;
+    float: right;
+    /*margin: 20px 0px 0px 0px;*/
+  }
+  #hero h2 {
+    font-size: 3.8em;
+  }
+  #benefits {
+    width: 100%;
+    padding: 30px;
+  }
+  #benefits p {
+    width: 100%;
+    font-size: 2.2em;
+  }
+  #benefits ul {
+    width: 100%;
+    margin: 30px 0 0 20px;
+    font-size: 2.2em;
+  }
+  blockquote {
+    font-size: 2.8em;
+  }
+  #main {
+    margin: 40px;
+  }
+  #sidebar {
+    width: 100%;
+  }
+  #posts {
+    width: 100%;
+  }
+  .post h2 {
+    font-size: 3em;
+  }
+  #posts p, #sidebar p {
+    font-size: 2em;
+  }
+  /*I'm hiding the ad cos its too long and aesthetically annoying me*/
+  #sidebar img {
+    display: none;
+  }
+}
